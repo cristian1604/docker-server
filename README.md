@@ -21,6 +21,8 @@ There are:
  - `POSTGRES_PASSWORD = changeMe`
 
 
+
+
 ### Install and run
 
 Simply run
@@ -29,11 +31,15 @@ Simply run
 
 And it's automatically start to download and install all dependences. The same thing to run the containers.
 
+
+
 ### Configuration
 
 The remaning configuration is set the timezone on Postgres and PHP servers.
 
 Later I will to explain this.
+
+
 
 ### Use it!
 
@@ -59,14 +65,18 @@ Or from another docker container on this repository, using the address `db`.
 
 By default this configuration allows incoming connections from the network. So it's ready to put on production quickly.
 
+
+
 ### Remove the containers
 
 To remove the three container instances run:
 
 `sudo sh docker-compose.sh down`
 
+
+
 ### Thanks to
-Thanks to [Martin Anacabe][manacabe] and his [docker-lampp-symfony][repo] repository, which was a model and improvement to this one.
+Thanks to [Martin Anacabe][manacabe] and his [docker-lampp-symfony][repo] repository, which was a model and improvement to this one. I left their scripts on `apache/scripts/` in case of you use Symfony framework, npm, nvm and want to preserve permissions of the host user.
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
